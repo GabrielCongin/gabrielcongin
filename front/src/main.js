@@ -6,6 +6,7 @@ import Projets from "./components/Projets";
 import Articles from "./components/Articles";
 import Contact from "./components/Contact";
 import Morpion from "./components/Morpion";
+import Dame from "./components/Dame";
 import vuetify from './plugins/vuetify';
 
 Vue.config.productionTip = false
@@ -19,7 +20,8 @@ const router = new VueRouter({
     { path: '/projets', component: Projets},
     { path: '/articles', component: Articles},
     { path: '/contact', component: Contact},
-    { path: '/projets/morpion', component : Morpion}
+    { path: '/projets/morpion', component : Morpion},
+    { path: '/projets/dame', component : Dame}
   ]
 })
 

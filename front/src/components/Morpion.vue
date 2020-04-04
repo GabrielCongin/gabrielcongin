@@ -27,44 +27,44 @@
     let previous = new Array();
     let symb;
     function hasWon(){
-        if(document.getElementById('1').src.match(symb) != null &&
-            document.getElementById('2').src.match(symb) != null &&
-            document.getElementById('3').src.match(symb) != null){
+        if(document.getElementById('1').src.match(require('../assets/morpion/'+symb+'.png').substring(0,15)) != null &&
+            document.getElementById('2').src.match(require('../assets/morpion/'+symb+'.png').substring(0,15)) != null &&
+            document.getElementById('3').src.match(require('../assets/morpion/'+symb+'.png').substring(0,15)) != null){
             return true;
         }
-        if(document.getElementById('1').src.match(symb) != null &&
-            document.getElementById('4').src.match(symb) != null &&
-            document.getElementById('7').src.match(symb) != null){
+        if(document.getElementById('1').src.match(require('../assets/morpion/'+symb+'.png').substring(0,15)) != null &&
+            document.getElementById('4').src.match(require('../assets/morpion/'+symb+'.png').substring(0,15)) != null &&
+            document.getElementById('7').src.match(require('../assets/morpion/'+symb+'.png').substring(0,15)) != null){
             return true;
         }
-        if(document.getElementById('4').src.match(symb) != null &&
-            document.getElementById('5').src.match(symb) != null &&
-            document.getElementById('6').src.match(symb) != null){
+        if(document.getElementById('4').src.match(require('../assets/morpion/'+symb+'.png').substring(0,15)) != null &&
+            document.getElementById('5').src.match(require('../assets/morpion/'+symb+'.png').substring(0,15)) != null &&
+            document.getElementById('6').src.match(require('../assets/morpion/'+symb+'.png').substring(0,15)) != null){
             return true;
         }
-        if(document.getElementById('2').src.match(symb) != null &&
-            document.getElementById('5').src.match(symb) != null &&
-            document.getElementById('8').src.match(symb) != null){
+        if(document.getElementById('2').src.match(require('../assets/morpion/'+symb+'.png').substring(0,15)) != null &&
+            document.getElementById('5').src.match(require('../assets/morpion/'+symb+'.png').substring(0,15)) != null &&
+            document.getElementById('8').src.match(require('../assets/morpion/'+symb+'.png').substring(0,15)) != null){
             return true;
         }
-        if(document.getElementById('7').src.match(symb) != null &&
-            document.getElementById('8').src.match(symb) != null &&
-            document.getElementById('9').src.match(symb) != null){
+        if(document.getElementById('7').src.match(require('../assets/morpion/'+symb+'.png').substring(0,15)) != null &&
+            document.getElementById('8').src.match(require('../assets/morpion/'+symb+'.png').substring(0,15)) != null &&
+            document.getElementById('9').src.match(require('../assets/morpion/'+symb+'.png').substring(0,15)) != null){
             return true;
         }
-        if(document.getElementById('3').src.match(symb) != null &&
-            document.getElementById('6').src.match(symb) != null &&
-            document.getElementById('9').src.match(symb) != null){
+        if(document.getElementById('3').src.match(require('../assets/morpion/'+symb+'.png').substring(0,15)) != null &&
+            document.getElementById('6').src.match(require('../assets/morpion/'+symb+'.png').substring(0,15)) != null &&
+            document.getElementById('9').src.match(require('../assets/morpion/'+symb+'.png').substring(0,15)) != null){
             return true;
         }
-        if(document.getElementById('1').src.match(symb) != null &&
-            document.getElementById('5').src.match(symb) != null &&
-            document.getElementById('9').src.match(symb) != null){
+        if(document.getElementById('1').src.match(require('../assets/morpion/'+symb+'.png').substring(0,15)) != null &&
+            document.getElementById('5').src.match(require('../assets/morpion/'+symb+'.png').substring(0,15)) != null &&
+            document.getElementById('9').src.match(require('../assets/morpion/'+symb+'.png').substring(0,15)) != null){
             return true;
         }
-        if(document.getElementById('7').src.match(symb) != null &&
-            document.getElementById('5').src.match(symb) != null &&
-            document.getElementById('3').src.match(symb) != null){
+        if(document.getElementById('7').src.match(require('../assets/morpion/'+symb+'.png').substring(0,15)) != null &&
+            document.getElementById('5').src.match(require('../assets/morpion/'+symb+'.png').substring(0,15)) != null &&
+            document.getElementById('3').src.match(require('../assets/morpion/'+symb+'.png').substring(0,15)) != null){
             return true;
         }
         return false;

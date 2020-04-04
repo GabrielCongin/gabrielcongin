@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <v-flex xs6>
-            <v-card max-width="600px">
+            <v-card max-width="600px" :to="lien_article">
                 <v-img :src="resolve_img_url(img_article)" width="150px" max-height="100px"></v-img>
                 <v-card-title>{{title}}</v-card-title>
                 <v-card-subtitle>{{subtitle}}</v-card-subtitle>
@@ -18,7 +18,8 @@
             title: String,
             subtitle: String,
             description: String,
-            img_article: String
+            img_article: String,
+            lien_article: String
         },
         methods: {
             resolve_img_url: function (path) {
