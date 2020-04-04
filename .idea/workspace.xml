@@ -7,6 +7,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -21,6 +28,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../naw/morpion/styles.css" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="$APPLICATION_CONFIG_DIR$/node/node-v12.13.1-win-x64/node" />
   </component>
   <component name="RunManager" selected="npm.npm serve">
@@ -109,6 +120,7 @@
       <updated>1576957554136</updated>
       <workItem from="1576957558297" duration="495000" />
       <workItem from="1576958079054" duration="227000" />
+      <workItem from="1585921689274" duration="20390000" />
     </task>
     <servers />
   </component>
@@ -116,17 +128,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="420" y="81" key="FileChooserDialogImpl" timestamp="1576958292834">
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585928560370">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="420" y="81" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1576958292834" />
-    <state x="336" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1576958080581">
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1585928560370" />
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1585931072290">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="336" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1576958080581" />
-    <state x="90" y="64" key="new project wizard" timestamp="1576958306820">
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1585931072290" />
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1585953744204">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="90" y="64" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1576958306820" />
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1585953744204" />
+    <state x="86" y="160" width="1095" height="495" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1585931443485">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="86" y="160" width="1095" height="495" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1585931443485" />
   </component>
 </project>
