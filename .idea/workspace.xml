@@ -124,7 +124,7 @@
       <workItem from="1585921689274" duration="20390000" />
       <workItem from="1586000988120" duration="12378000" />
       <workItem from="1586086563501" duration="13337000" />
-      <workItem from="1586170205544" duration="5114000" />
+      <workItem from="1586170205544" duration="16650000" />
     </task>
     <servers />
   </component>
@@ -144,6 +144,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1586006049388" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1586195932839">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1280.680@0.0.1280.680" timestamp="1586195932839" />
     <state x="86" y="160" width="1095" height="495" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1585931443485">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -152,5 +156,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="337" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1586170222008" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1586201621659">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1586201621659" />
   </component>
 </project>

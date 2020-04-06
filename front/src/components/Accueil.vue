@@ -1,8 +1,8 @@
 <template>
     <div id="accueil">
         <img id="logo" src="../assets/gabriel_pdp_2.png"><img>
-        <h1>Bienvenue !</h1>
-        <p id="present"> Je suis Gabriel, étudiant en <span class="keyword">informatique<br/> </span> et passionné de <span class="keyword">sport</span></p>
+        <h1 id="welcome">Bienvenue !</h1>
+        <p id="present"> Je suis Gabriel,<br/> Étudiant en <span class="keyword">Informatique </span><v-icon>mdi-laptop</v-icon><br/>& Passionné de <span class="keyword">Sport </span><v-icon>mdi-dumbbell</v-icon></p>
     </div>
 </template>
 
@@ -13,15 +13,19 @@
 </script>
 
 <style scoped>
+    #welcome{
+        font-size: 42px;
+    }
     #logo {
         width: 180px;
     }
     .keyword {
         color: forestgreen;
+        font-weight: bold;
     }
     #present{
         color: gray;
-        font-size: x-large;
+        font-size: 27px;
     }
     #accueil {
         padding-left: 5%;

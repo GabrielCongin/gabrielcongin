@@ -3,14 +3,18 @@ import App from './App.vue'
 import VueRouter from 'vue-router';
 import Accueil from "./components/Accueil";
 import Projets from "./components/Projets";
-import Articles from "./components/Articles";
+//import Articles from "./components/Articles";
 import Contact from "./components/Contact";
 import Morpion from "./components/Morpion";
+import Parcours from "./components/Parcours";
 import Dame from "./components/Dame";
 import vuetify from './plugins/vuetify';
 
 Vue.config.productionTip = false
 Vue.use(VueRouter);
+Vue.use(vuetify, {
+  iconfont: 'md'
+})
 
 const router = new VueRouter({
   mode: "history",
@@ -18,10 +22,11 @@ const router = new VueRouter({
     { path: '/', redirect: '/accueil'},
     { path: '/accueil', component: Accueil},
     { path: '/projets', component: Projets},
-    { path: '/articles', component: Articles},
+    //{ path: '/articles', component: Articles},
     { path: '/contact', component: Contact},
     { path: '/projets/morpion', component : Morpion},
-    { path: '/projets/dame', component : Dame}
+    { path: '/projets/dame', component : Dame},
+    { path: '/parcours', component: Parcours}
   ]
 })
 
