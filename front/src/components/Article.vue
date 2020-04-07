@@ -1,11 +1,13 @@
 <template>
     <v-container>
-            <v-card id="card" width="380px" height="300" :href="lien_internet" :to="lien_article" target="_blank">
+        <v-hover v-slot:default="{ hover }">
+            <v-card :elevation="hover ? 12 : 2" id="card" width="380px" height="300" :href="lien_internet" :to="lien_article" target="_blank">
                 <v-img :src="resolve_img_url(img_article)" width="200px" max-height="150px"></v-img>
                 <v-card-title>{{title}}</v-card-title>
                 <v-card-subtitle>{{subtitle}}</v-card-subtitle>
                 <v-card-text>{{description}}</v-card-text>
             </v-card>
+        </v-hover>
     </v-container>
 </template>
 

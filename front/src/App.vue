@@ -1,11 +1,12 @@
 <template>
     <v-app>
-      <Header/>
+        <Header/>
     <v-content>
-      <router-view></router-view>
+      <router-view>
+      </router-view>
     </v-content>
         <Footer/>
-  </v-app>
+    </v-app>
 </template>
 
 <script>

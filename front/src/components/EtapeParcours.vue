@@ -1,9 +1,9 @@
 <template>
-        <v-timeline-item id="etape" :icon="icone" color="green">
+        <v-timeline-item id="etape" :icon="icone" color="black" fill-dot>
             <span slot="opposite">{{date}}</span>
-            <v-card>
+            <v-card color="grey">
                 <v-card-title>{{title}}</v-card-title>
-                <v-card-text>{{description}}</v-card-text>
+                <v-card-text id="test" class="white text--primary">{{description}}</v-card-text>
             </v-card>
         </v-timeline-item>
 </template>
@@ -24,5 +24,8 @@
     #etape{
         padding-left: 14%;
         padding-right: 14%;
+    }
+    #test{
+        padding-top: 15px;
     }
 </style>

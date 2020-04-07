@@ -20,11 +20,11 @@
         width: 180px;
     }
     .keyword {
-        color: forestgreen;
+        color: #212121;
         font-weight: bold;
     }
     #present{
-        color: gray;
+        color: grey;
         font-size: 27px;
     }
     #accueil {

@@ -1,14 +1,11 @@
 <template>
     <div id="parcours">
-        <v-timeline
-                :align-top="alignTop"
-                :dense="dense"
-                :reverse="reverse"
-        >
+        <v-timeline align-top>
             <EtapeParcours description="Méthodes Informatiques Appliquées à la Gestion des Entreprises"
                            title="Licence 3 MIAGE" icone="mdi-school"
                            date="Depuis 09-2019"></EtapeParcours>
-            <EtapeParcours description="Encadrement d'une salle informatique et aide aux étudiants 7H/semaine"
+            <EtapeParcours description="Encadrement d'une salle informatique et aide aux étudiants 7H/semaine
+                                        au sein de l'Université de Lille"
                            title="Monitorat" icone="mdi-account-supervisor"
                            date="09-2019 / 03-2020"></EtapeParcours>
             <EtapeParcours description="CDD de 1 mois en qualité d'ingénieur développeur au sein de l'équipe Loki, spécialisée dans la recherche en interaction homme-machine"

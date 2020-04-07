@@ -125,6 +125,8 @@
       <workItem from="1586000988120" duration="12378000" />
       <workItem from="1586086563501" duration="13337000" />
       <workItem from="1586170205544" duration="16650000" />
+      <workItem from="1586261209969" duration="11119000" />
+      <workItem from="1586290498577" duration="9087000" />
     </task>
     <servers />
   </component>
@@ -152,13 +154,13 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="86" y="160" width="1095" height="495" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1585931443485" />
-    <state x="337" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1586170222008">
+    <state x="337" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1586290520741">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="337" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1586170222008" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1586201621659">
+    <state x="337" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1586290520741" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1586295516987">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1586201621659" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1586295516987" />
   </component>
 </project>
