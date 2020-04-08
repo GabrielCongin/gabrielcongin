@@ -43,7 +43,7 @@
     }
     #interets{
         padding-top: 10px;
-        padding-left: 22px;
+        padding-left: 36px;
     }
 
 </style>

@@ -1,7 +1,7 @@
 <template>
         <!-- dark ou color="elevation-0" ou color="green" ou rien -->
     <v-toolbar dark>
-                <v-toolbar-title><v-btn to="/accueil" text>gabrielc.dev</v-btn></v-toolbar-title>
+                <v-toolbar-title><v-btn to="/accueil" text>Accueil</v-btn></v-toolbar-title>
                 <v-spacer></v-spacer>
                 <v-btn to="/parcours" text>Parcours</v-btn>
                 <v-btn to="/projets" text>Projets</v-btn>

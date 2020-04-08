@@ -53,7 +53,7 @@
     }
     #projets{
         padding-top: 10px;
-        padding-left: 22px;
+        padding-left: 25px;
     }
 
 </style>
