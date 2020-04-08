@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <v-hover v-slot:default="{ hover }">
-            <v-card :elevation="hover ? 12 : 2" id="card" width="380px" height="300" :href="lien_internet" :to="lien_article" target="_blank">
+            <v-card :elevation="hover ? 12 : 2" id="card" width="380px" height="300" :href="lien_internet" :to="lien_article" :target="newPage">
                 <v-img :src="resolve_img_url(img_article)" width="200px" max-height="150px"></v-img>
                 <v-card-title>{{title}}</v-card-title>
                 <v-card-subtitle>{{subtitle}}</v-card-subtitle>
@@ -20,7 +20,8 @@
             description: String,
             img_article: String,
             lien_article: String,
-            lien_internet: String
+            lien_internet: String,
+            newPage: String
         },
         methods: {
             resolve_img_url: function (path) {

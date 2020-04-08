@@ -42,6 +42,7 @@
         float: left;
     }
     #interets{
+        padding-top: 10px;
         padding-left: 22px;
     }
 

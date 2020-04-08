@@ -10,6 +10,8 @@ import Parcours from "./components/Parcours";
 import Dame from "./components/Dame";
 import vuetify from './plugins/vuetify';
 import Interets from "./components/Interets";
+import JeuCarte from "./components/JeuCarte";
+import Test from "./components/Test";
 
 Vue.config.productionTip = false
 Vue.use(VueRouter);
@@ -28,7 +30,9 @@ const router = new VueRouter({
     { path: '/projets/morpion', component : Morpion},
     { path: '/projets/dame', component : Dame},
     { path: '/parcours', component: Parcours},
-    {path: '/interets', component: Interets}
+    { path: '/interets', component: Interets},
+    { path: '/projets/jeuPaires', component: JeuCarte},
+    { path: '/projets/test', component: Test}
   ]
 })
 

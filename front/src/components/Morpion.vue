@@ -18,6 +18,8 @@
                 <td @click="symbMethod('9')"> <img id="9" src=""> </td>
             </tr>
         </table>
+        <br/>
+        <v-btn align="center" @click="restart" text>Recommencer</v-btn>
     </div>
 </template>
 
@@ -95,6 +97,15 @@
                 previous = new Array();
                 cpt=0;
                 end=false;
+            },
+            restart: function(){
+                previous = new Array();
+                cpt=0;
+                end=false;
+                let i;
+                for(i=1;i<=9;i++){
+                    document.getElementById(i).src="";
+                }
             }
         },
         beforeMount() {

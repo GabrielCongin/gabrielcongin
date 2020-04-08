@@ -340,7 +340,7 @@
     export default {
         name: "Dame",
         methods:{
-            doAction: function(identif){
+            doAction(identif){
                 console.log("coucou");
                 let x = parseInt(identif.charAt(1));
                 let y = parseInt(identif.charAt(3));
@@ -364,7 +364,7 @@
                     }
                     cpt++;
                     let id = `l${i}c${j}`;
-                    htmlTab += `<td @click="doAction('${id}')" id="${id}" align="center" style="background-color:${color};border: 1px solid #333;width: 60px;height: 60px;">`;
+                    htmlTab += `<td on:click="doAction('${id}')" id="${id}" align="center" style="background-color:${color};border: 1px solid #333;width: 60px;height: 60px;">`;
 
                     if(color == 'tan'){
                         if(i<=3) {

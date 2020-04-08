@@ -1,7 +1,9 @@
 <template>
+    <div id="contact">
         <div id="formulaire_contact">
-           <form @submit.prevent="sendEmail">
+           <v-form @submit.prevent="sendEmail">
                 <v-text-field
+                        class="test"
                     name="user_name"
                     v-model="name"
                     :rules="nameRules"
@@ -10,6 +12,7 @@
                     required
                     outlined
                     color="#212121"
+                    full-width
                 >
                 </v-text-field>
                 <v-text-field
@@ -31,8 +34,12 @@
                         color="#212121"
                 ></v-textarea>
                 <v-btn class="mr-4" type="submit" value="Send">Envoyer</v-btn>
-            </form>
+            </v-form>
         </div>
+        <div id="illustration">
+            <v-img width="350px" src="../assets/avatar_croquis.jpg"></v-img>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -70,6 +77,16 @@
     #formulaire_contact{
         padding-left: 5%;
         padding-top: 5%;
-        padding-right: 55%;
+        padding-right: 14%;
+        display: inline;
+        float: left;
+    }
+    #illustration{
+        padding-top: 7%;
+        display: inline;
+        float: left;
+    }
+    .test{
+        width:450px;
     }
 </style>

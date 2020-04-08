@@ -1,8 +1,13 @@
 <template>
     <div id="accueil">
-        <img id="logo" src="../assets/gabriel_pdp_2.png"><img>
-        <h1 id="welcome">Bienvenue !</h1>
-        <p id="present"> Je suis Gabriel,<br/> Étudiant en <span class="keyword">Informatique </span><v-icon>mdi-laptop</v-icon><br/>& Passionné de <span class="keyword">Sport </span><v-icon>mdi-dumbbell</v-icon></p>
+        <div id="message">
+            <img id="logo" src="../assets/gabriel_pdp_2.png"><img>
+            <h1 id="welcome">Bienvenue !</h1>
+            <p id="present"> Je suis Gabriel,<br/> Étudiant en <span class="keyword">Informatique </span><v-icon>mdi-laptop</v-icon><br/>& Passionné de <span class="keyword">Sport </span><v-icon>mdi-dumbbell</v-icon></p>
+        </div>
+        <div id="illustration">
+            <v-img width="350px" src="../assets/avatar_croquis.jpg"></v-img>
+        </div>
     </div>
 </template>
 
@@ -30,5 +35,12 @@
     #accueil {
         padding-left: 5%;
         padding-top: 7%;
+    }
+    #message,#illustration{
+        float:left;
+        display: inline;
+    }
+    #illustration{
+        padding-left: 25%;
     }
 </style>
