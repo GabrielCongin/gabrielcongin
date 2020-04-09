@@ -367,36 +367,36 @@
             newX = parseInt(x)+1;
             newY = parseInt(y)+1;
             if(newY < 10 && newX < 10 && plateau[newX][newY].symb == ""){
-                document.getElementById(`l${newX}c${newY}`).style = "background-color:red;";
+                document.getElementById(`l${newX}c${newY}`).style = "background-color:red;border: 1px solid #333;width: 60px;height: 60px;";
                 plateau[newX][newY].symb='rouge';
             }else if(newY+1 < 10 && newX+1 < 10 && (plateau[newX][newY].symb == "blanc" || plateau[newX][newY].symb == "dame_blanc") && plateau[newX+1][newY+1].symb == ""){
-                document.getElementById(`l${newX+1}c${newY+1}`).style = "background-color:red;";
+                document.getElementById(`l${newX+1}c${newY+1}`).style = "background-color:red;border: 1px solid #333;width: 60px;height: 60px;";
                 plateau[newX+1][newY+1].symb='rouge';
             }
             newY = parseInt(y)-1;
             if(newY >= 0 && newX < 10 && plateau[newX][newY].symb == ""){
-                document.getElementById(`l${newX}c${newY}`).style = "background-color:red;";
+                document.getElementById(`l${newX}c${newY}`).style = "background-color:red;border: 1px solid #333;width: 60px;height: 60px;";
                 plateau[newX][newY].symb='rouge';
             }else if(newY-1 >= 0 && newX+1 < 10 && (plateau[newX][newY].symb == "blanc" || plateau[newX][newY].symb == "dame_blanc") && plateau[newX+1][newY-1].symb == ""){
-                document.getElementById(`l${newX+1}c${newY-1}`).style = "background-color:red;";
+                document.getElementById(`l${newX+1}c${newY-1}`).style = "background-color:red;border: 1px solid #333;width: 60px;height: 60px;";
                 plateau[newX+1][newY-1].symb='rouge';
             }
         }else if(plateau[x][y].symb == 'blanc' && play % 2 == 0){
             newX = parseInt(x)-1;
             newY = parseInt(y)+1;
             if(newY < 10 && newX >= 0 && plateau[newX][newY].symb == ""){
-                document.getElementById(`l${newX}c${newY}`).style = "background-color:red;";
+                document.getElementById(`l${newX}c${newY}`).style = "background-color:red;border: 1px solid #333;width: 60px;height: 60px;";
                 plateau[newX][newY].symb='rouge';
             }else if(newY+1 < 10 && newX-1 >= 0 && (plateau[newX][newY].symb == "noir" || plateau[newX][newY].symb == "dame_noir") && plateau[newX-1][newY+1].symb == ""){
-                document.getElementById(`l${newX-1}c${newY+1}`).style = "background-color:red;";
+                document.getElementById(`l${newX-1}c${newY+1}`).style = "background-color:red;border: 1px solid #333;width: 60px;height: 60px;";
                 plateau[newX-1][newY+1].symb='rouge';
             }
             newY = parseInt(y)-1;
             if(newY >= 0 && newX >= 0 && plateau[newX][newY].symb == ""){
-                document.getElementById(`l${newX}c${newY}`).style = "background-color:red;";
+                document.getElementById(`l${newX}c${newY}`).style = "background-color:red;border: 1px solid #333;width: 60px;height: 60px;";
                 plateau[newX][newY].symb='rouge';
             }else if(newY-1 >= 0 && newX-1 >= 0 && (plateau[newX][newY].symb == "noir" || plateau[newX][newY].symb == "dame_noir") && plateau[newX-1][newY-1].symb == ""){
-                document.getElementById(`l${newX-1}c${newY-1}`).style = "background-color:red;";
+                document.getElementById(`l${newX-1}c${newY-1}`).style = "background-color:red;border: 1px solid #333;width: 60px;height: 60px;";
                 plateau[newX-1][newY-1].symb='rouge';
             }
         }else if(plateau[x][y].symb == 'dame_noir' && play%2!=0 || plateau[x][y].symb == 'dame_blanc' && play%2==0){
@@ -428,7 +428,7 @@
                         }
                     }
                     if(diago[0] && plateau[newX][newY].symb == ""){
-                        document.getElementById(`l${newX}c${newY}`).style = "background-color:red;";
+                        document.getElementById(`l${newX}c${newY}`).style = "background-color:red;border: 1px solid #333;width: 60px;height: 60px;";
                         plateau[newX][newY].symb='rouge';
                     }
                 }
@@ -448,7 +448,7 @@
                         }
                     }
                     if (diago[1] && plateau[newX][newY2].symb == "") {
-                        document.getElementById(`l${newX}c${newY2}`).style = "background-color:red;";
+                        document.getElementById(`l${newX}c${newY2}`).style = "background-color:red;border: 1px solid #333;width: 60px;height: 60px;";
                         plateau[newX][newY2].symb = 'rouge';
                     }
                 }
@@ -468,7 +468,7 @@
                         }
                     }
                     if(diago[2] && plateau[newXDown][newY].symb == ""){
-                        document.getElementById(`l${newXDown}c${newY}`).style = "background-color:red;";
+                        document.getElementById(`l${newXDown}c${newY}`).style = "background-color:red;border: 1px solid #333;width: 60px;height: 60px;";
                         plateau[newXDown][newY].symb='rouge';
                     }
                 }
@@ -487,7 +487,7 @@
                         }
                     }
                     if(diago[3] && plateau[newXDown][newY2].symb == ""){
-                        document.getElementById(`l${newXDown}c${newY2}`).style = "background-color:red;";
+                        document.getElementById(`l${newXDown}c${newY2}`).style = "background-color:red;border: 1px solid #333;width: 60px;height: 60px;";
                         plateau[newXDown][newY2].symb='rouge';
                     }
                 }
@@ -530,7 +530,7 @@
             document.getElementById(`l${oldX}c${oldY}`).childNodes[0].src = "";
             plateau[x][y].symb = plateau[oldX][oldY].symb;
             plateau[oldX][oldY].symb = "";
-            document.getElementById(`l${x}c${y}`).style = "background-color:tan;";
+            document.getElementById(`l${x}c${y}`).style = "background-color:tan;border: 1px solid #333;width: 60px;height: 60px;";
             play++;
             previous = null;
             removeRed();
@@ -543,7 +543,7 @@
             plateau[x][y].symb = plateau[oldX][oldY].symb;
             plateau[oldX][oldY].symb = "";
             plateau[(oldX+x)/2][(oldY+y)/2].symb = "";
-            document.getElementById(`l${x}c${y}`).style = "background-color:tan;";
+            document.getElementById(`l${x}c${y}`).style = "background-color:tan;border: 1px solid #333;width: 60px;height: 60px;";
             increaseCpt(plateau[x][y].symb);
             previous = null;
             replaceDame(identif);
@@ -554,7 +554,7 @@
             document.getElementById(`l${oldX}c${oldY}`).childNodes[0].src = "";
             plateau[x][y].symb = plateau[oldX][oldY].symb;
             plateau[oldX][oldY].symb = "";
-            document.getElementById(`l${x}c${y}`).style = "background-color:tan;";
+            document.getElementById(`l${x}c${y}`).style = "background-color:tan;border: 1px solid #333;width: 60px;height: 60px;";
             let color = plateau[x][y].symb.substring(5,plateau[x][y].symb.length);
             let b;
             for(b=1;b< Math.abs(x - oldX);b++){
@@ -604,7 +604,7 @@
         for(n=0;n<10;n++){
             for(m=0;m<10;m++){
                 if(plateau[n][m].symb == "rouge"){
-                    document.getElementById(`l${n}c${m}`).style = "background-color:tan;";
+                    document.getElementById(`l${n}c${m}`).style = "background-color:tan;border: 1px solid #333;width: 60px;height: 60px;";
                     plateau[n][m].symb= "";
                 }
             }
@@ -631,7 +631,7 @@
                 if(x+(2*v) >= 0 && x+(2*v)<10 && y+(2*w) >= 0 && y+(2*w)<10 && plateau[x+v][y+w].symb == opposite &&
                     plateau[x+(2*v)][y+(2*w)].symb == ""
                 ){
-                    document.getElementById(`l${x+(2*v)}c${y+(2*w)}`).style = "background-color:red;";
+                    document.getElementById(`l${x+(2*v)}c${y+(2*w)}`).style = "background-color:red;border: 1px solid #333;width: 60px;height: 60px;";
                     plateau[x+(2*v)][y+(2*w)].symb='rouge';
                     found = true;
                 }

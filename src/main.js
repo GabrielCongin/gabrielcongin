@@ -12,12 +12,11 @@ import vuetify from './plugins/vuetify';
 import Interets from "./components/Interets";
 import JeuCarte from "./components/JeuCarte";
 import Test from "./components/Test";
+import responsive  from 'vue-responsive';
 
+Vue.use(responsive);
 Vue.config.productionTip = false
 Vue.use(VueRouter);
-Vue.use(vuetify, {
-  iconfont: 'md'
-})
 
 const router = new VueRouter({
   mode: "history",
