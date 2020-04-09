@@ -5,7 +5,7 @@
             <h1 id="welcome">Bienvenue !</h1>
             <p id="present"> Je suis Gabriel,<br/> Étudiant en <span class="keyword">Informatique </span><v-icon>mdi-laptop</v-icon><br/>& Passionné de <span class="keyword">Sport </span><v-icon>mdi-dumbbell</v-icon></p>
         </div>
-        <div id="illustration">
+        <div id="illustration" v-responsive.lg.xl>
             <v-img width="350px" src="../assets/avatar_croquis.jpg"></v-img>
         </div>
     </div>

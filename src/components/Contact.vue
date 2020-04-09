@@ -36,7 +36,7 @@
                 <v-btn class="mr-4" type="submit" value="Send">Envoyer</v-btn>
             </v-form>
         </div>
-        <div id="illustration">
+        <div id="illustration" v-responsive.lg.xl>
             <v-img width="350px" src="../assets/avatar_croquis.jpg"></v-img>
         </div>
     </div>
@@ -77,13 +77,13 @@
     #formulaire_contact{
         padding-left: 5%;
         padding-top: 5%;
-        padding-right: 14%;
         display: inline;
         float: left;
     }
     #illustration{
         padding-top: 7%;
         display: inline;
+        padding-left: 14%;
         float: left;
     }
     .test{
