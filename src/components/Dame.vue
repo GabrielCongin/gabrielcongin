@@ -1,7 +1,331 @@
 <template>
     <div id="dame">
         <div id="global">
-            <div id="myDiv"><h1>Jeu de Dame</h1></div>
+            <h1 align="center">Jeu de Dame</h1>
+            <div id="myDiv">
+                <table>
+                    <tr>
+                        <td @click="doAction('l0c0')" id="l0c0" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l0c1')" id="l0c1" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_noir.png'>
+                        </td>
+                        <td @click="doAction('l0c2')" id="l0c2" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l0c3')" id="l0c3" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_noir.png'>
+                        </td>
+                        <td @click="doAction('l0c4')" id="l0c4" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l0c5')" id="l0c5" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_noir.png'>
+                        </td>
+                        <td @click="doAction('l0c6')" id="l0c6" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l0c7')" id="l0c7" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_noir.png'>
+                        </td>
+                        <td @click="doAction('l0c8')" id="l0c8" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l0c9')" id="l0c9" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_noir.png'>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td @click="doAction('l0c0')" id="l1c0" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_noir.png'>
+                        </td>
+                        <td @click="doAction('l1c1')" id="l1c1" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l1c2')" id="l1c2" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_noir.png'>
+                        </td>
+                        <td @click="doAction('l1c3')" id="l1c3" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l1c4')" id="l1c4" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_noir.png'>
+                        </td>
+                        <td @click="doAction('l1c5')" id="l1c5" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l1c6')" id="l1c6" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_noir.png'>
+                        </td>
+                        <td @click="doAction('l1c7')" id="l1c7" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l1c8')" id="l1c8" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_noir.png'>
+                        </td>
+                        <td @click="doAction('l1c9')" id="l1c9" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td @click="doAction('l2c0')" id="l2c0" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l2c1')" id="l2c1" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_noir.png'>
+                        </td>
+                        <td @click="doAction('l2c2')" id="l2c2" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l2c3')" id="l2c3" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_noir.png'>
+                        </td>
+                        <td @click="doAction('l2c4')" id="l2c4" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l2c5')" id="l2c5" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_noir.png'>
+                        </td>
+                        <td @click="doAction('l2c6')" id="l2c6" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l2c7')" id="l2c7" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_noir.png'>
+                        </td>
+                        <td @click="doAction('l2c8')" id="l2c8" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l2c9')" id="l2c9" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_noir.png'>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td @click="doAction('l3c0')" id="l3c0" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_noir.png'>
+                        </td>
+                        <td @click="doAction('l3c1')" id="l3c1" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l3c2')" id="l3c2" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_noir.png'>
+                        </td>
+                        <td @click="doAction('l3c3')" id="l3c3" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l3c4')" id="l3c4" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_noir.png'>
+                        </td>
+                        <td @click="doAction('l3c5')" id="l3c5" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l3c6')" id="l3c6" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_noir.png'>
+                        </td>
+                        <td @click="doAction('l3c7')" id="l3c7" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l3c8')" id="l3c8" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_noir.png'>
+                        </td>
+                        <td @click="doAction('l3c9')" id="l3c9" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td @click="doAction('l4c0')" id="l4c0" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l4c1')" id="l4c1" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l4c2')" id="l4c2" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l4c3')" id="l4c3" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l4c4')" id="l4c4" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l4c5')" id="l4c5" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l4c6')" id="l4c6" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l4c7')" id="l4c7" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l4c8')" id="l4c8" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l4c9')" id="l4c9" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td @click="doAction('l5c0')" id="l5c0" align="center" style="background-color:tan;border: 1px solid #333;tan: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l5c1')" id="l5c1" align="center" style="background-color:white;border: 1px solid #333;tan: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l5c2')" id="l5c2" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l5c3')" id="l5c3" align="center" style="background-color:white;border: 1px solid #333;tan: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l5c4')" id="l5c4" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l5c5')" id="l5c5" align="center" style="background-color:white;border: 1px solid #333;tan: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l5c6')" id="l5c6" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l5c7')" id="l5c7" align="center" style="background-color:white;border: 1px solid #333;tan: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l5c8')" id="l5c8" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l5c9')" id="l5c9" align="center" style="background-color:white;border: 1px solid #333;tan: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td @click="doAction('l6c0')" id="l6c0" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l6c1')" id="l6c1" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_blanc.png'>
+                        </td>
+                        <td @click="doAction('l6c2')" id="l6c2" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l6c3')" id="l6c3" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_blanc.png'>
+                        </td>
+                        <td @click="doAction('l6c4')" id="l6c4" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l6c5')" id="l6c5" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_blanc.png'>
+                        </td>
+                        <td @click="doAction('l6c6')" id="l6c6" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l6c7')" id="l6c7" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_blanc.png'>
+                        </td>
+                        <td @click="doAction('l6c8')" id="l6c8" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l6c9')" id="l6c9" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_blanc.png'>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td @click="doAction('l7c0')" id="l7c0" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_blanc.png'>
+                        </td>
+                        <td @click="doAction('l7c1')" id="l7c1" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l7c2')" id="l7c2" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_blanc.png'>
+                        </td>
+                        <td @click="doAction('l7c3')" id="l7c3" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l7c4')" id="l7c4" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_blanc.png'>
+                        </td>
+                        <td @click="doAction('l7c5')" id="l7c5" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l7c6')" id="l7c6" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_blanc.png'>
+                        </td>
+                        <td @click="doAction('l7c7')" id="l7c7" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l7c8')" id="l7c8" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_blanc.png'>
+                        </td>
+                        <td @click="doAction('l7c9')" id="l7c9" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td @click="doAction('l8c0')" id="l8c0" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l8c1')" id="l8c1" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_blanc.png'>
+                        </td>
+                        <td @click="doAction('l8c2')" id="l8c2" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l8c3')" id="l8c3" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_blanc.png'>
+                        </td>
+                        <td @click="doAction('l8c4')" id="l8c4" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l8c5')" id="l8c5" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_blanc.png'>
+                        </td>
+                        <td @click="doAction('l8c6')" id="l8c6" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l8c7')" id="l8c7" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_blanc.png'>
+                        </td>
+                        <td @click="doAction('l8c8')" id="l8c8" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l8c9')" id="l8c9" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_blanc.png'>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td @click="doAction('l9c0')" id="l9c0" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_blanc.png'>
+                        </td>
+                        <td @click="doAction('l9c1')" id="l9c1" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l9c2')" id="l9c2" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_blanc.png'>
+                        </td>
+                        <td @click="doAction('l9c3')" id="l9c3" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l9c4')" id="l9c4" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_blanc.png'>
+                        </td>
+                        <td @click="doAction('l9c5')" id="l9c5" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l9c6')" id="l9c6" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_blanc.png'>
+                        </td>
+                        <td @click="doAction('l9c7')" id="l9c7" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                        <td @click="doAction('l9c8')" id="l9c8" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src='../assets/dame/pion_blanc.png'>
+                        </td>
+                        <td @click="doAction('l9c9')" id="l9c9" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
+                            <img src="">
+                        </td>
+                    </tr>
+                </table>
+            </div>
             <div id="scoreImage">
                 <img id="img_noir" border="" style="" src="../assets/dame/pion_noir.png"/><br/><br/>
                 <img id="img_blanc" border="" style="" src="../assets/dame/pion_blanc.png"/>
@@ -23,7 +347,7 @@
 
     let i=0;
     let j;
-    let htmlTab="";
+    //let htmlTab="";
     let cpt = 0;
     let color;
     let plateau = new Array(10);
@@ -199,6 +523,8 @@
         let y = parseInt(identif.charAt(3));
         let oldX = parseInt(previous.charAt(1));
         let oldY = parseInt(previous.charAt(3));
+        console.log(`l${x}c${y}`);
+        console.log(`l${oldX}c${oldY}`);
         if( (y - oldY == 1 || y - oldY == -1) && plateau[oldX][oldY].symb.substring(0,4)!='dame' && plateau[x][y].symb=="rouge"){
             document.getElementById(`l${x}c${y}`).childNodes[0].src = require("../assets/dame/pion_"+plateau[oldX][oldY].symb+".png");
             document.getElementById(`l${oldX}c${oldY}`).childNodes[0].src = "";
@@ -332,10 +658,8 @@
         }else{
             currentCouleur='blanc';
         }
-        document.getElementById(`img_${currentCouleur}`).style = 'border-color:red;';
-        document.getElementById(`img_${currentCouleur}`).border = '5';
+        document.getElementById(`img_${currentCouleur}`).style = 'border: 5px solid #ff0000';
         document.getElementById(`img_${opposite(currentCouleur)}`).style = "";
-        document.getElementById(`img_${opposite(currentCouleur)}`).border = "";
     }
     export default {
         name: "Dame",
@@ -352,9 +676,9 @@
             }
         },
         mounted() {
-            htmlTab += '<table>'
+            //htmlTab += '<table>'
             for(i=0;i<10;i++){
-                htmlTab += '<tr>';
+                //htmlTab += '<tr>';
                 plateau[i] = new Array(10);
                 for(j=0;j<10;j++){
                     if(cpt % 2 == 0){
@@ -363,31 +687,30 @@
                         color = 'tan';
                     }
                     cpt++;
-                    let id = `l${i}c${j}`;
-                    htmlTab += `<td on:click="doAction('${id}')" id="${id}" align="center" style="background-color:${color};border: 1px solid #333;width: 60px;height: 60px;">`;
+                    //let id = `l${i}c${j}`;
+                    //htmlTab += `<td on:click="doAction('${id}')" id="${id}" align="center" style="background-color:${color};border: 1px solid #333;width: 60px;height: 60px;">`;
 
                     if(color == 'tan'){
                         if(i<=3) {
                             symbole="noir";
-                            htmlTab += '<img src='+require('../assets/dame/pion_noir.png')+'>';
+                            //htmlTab += '<img src='+require('../assets/dame/pion_noir.png')+'>';
                         }else if(i>=6){
                             symbole="blanc";
-                            htmlTab += '<img src='+require('../assets/dame/pion_blanc.png')+'>';
+                            //htmlTab += '<img src='+require('../assets/dame/pion_blanc.png')+'>';
                         }else{
-                            htmlTab += `<img src="">`;
+                           // htmlTab += `<img src="">`;
                         }
                     }
-                    htmlTab += `</td>`;
+                    //htmlTab += `</td>`;
                     plateau[i][j] = new Pion(symbole);
                     symbole = "";
                 }
-                htmlTab += '</tr>';
+                //htmlTab += '</tr>';
                 cpt++;
             }
-            htmlTab+='</table>';
-            document.getElementById('myDiv').innerHTML+= htmlTab;
-            document.getElementById("img_blanc").style = 'border-color:red;';
-            document.getElementById("img_blanc").border = '5';
+            //htmlTab+='</table>';
+            //document.getElementById('myDiv').innerHTML+= htmlTab;
+            document.getElementById("img_blanc").style = 'border: 5px solid #ff0000';
         }
     }
 </script>
@@ -395,6 +718,7 @@
 <style scoped>
     #global #myDiv {
         float : left;
+        padding-left: 20px;
     }
 
     #global #scoreImage {
