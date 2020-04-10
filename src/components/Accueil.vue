@@ -12,9 +12,6 @@
 </template>
 
 <script>
-    /* to dooo
-    page parcours, vider textfield message, resize jeu de dame p-e
-     */
     export default {
         name: "Accueil"
     }
