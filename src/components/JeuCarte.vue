@@ -48,28 +48,31 @@
     export default {
         name: "JeuCarte",
         methods:{
-            displayName: function(c){
+            displayName : function(c){
                 if(flag < 2){
                     flag++;
-                    document.getElementById(c).src = require('../assets/cartespng/'+card[c-1]+'.png');
-                    if(flag==2){
-                        setTimeout( function() {
-                            if(goodAnswer(sortTab[c-1],sortTab[id2-1])){
-                                win--;
-                                if(win == 0){
-                                    alert("YOU WON");
+                    if(flag==2 && c!=id2 || flag==1){
+                        document.getElementById(c).src = require('../assets/cartespng/'+card[c-1]+'.png');
+                        if(flag==2){
+                            setTimeout( function() {
+                                if(goodAnswer(sortTab[c-1],sortTab[id2-1])){
+                                    win--;
+                                    if(win == 0){
+                                        alert("Tu as gagné!");
+                                    }
+                                }else{
+                                    document.getElementById(c).src = require('../assets/cartespng/backside.png');
+                                    document.getElementById(id2).src = require('../assets/cartespng/backside.png');
                                 }
-                            }else{
-                                document.getElementById(c).src = require('../assets/cartespng/backside.png');
-                                document.getElementById(id2).src = require('../assets/cartespng/backside.png');
-                            }
-                            flag=0;
-                        },1500);
+                                flag=0;
+                            },1500);
+                        }else{
+                            id2 = c;
+                        }
                     }else{
-                        id2 = c;
+                        flag--;
                     }
                 }
-
             },
             restart: function(){
                 sortTab=shuffle(card);

@@ -79,7 +79,7 @@
                     if (cpt % 2 == 0) {
                         symb = 'croix';
                     } else {
-                        symb = 'rond';
+                        symb = 'ronds';
                     }
                     document.getElementById(c).src = require('../assets/morpion/'+symb+'.png');
                     previous.push(c);

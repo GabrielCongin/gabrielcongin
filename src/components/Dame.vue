@@ -37,7 +37,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td @click="doAction('l0c0')" id="l1c0" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
+                        <td @click="doAction('l1c0')" id="l1c0" align="center" style="background-color:tan;border: 1px solid #333;width: 60px;height: 60px;">
                             <img src='../assets/dame/pion_noir.png'>
                         </td>
                         <td @click="doAction('l1c1')" id="l1c1" align="center" style="background-color:white;border: 1px solid #333;width: 60px;height: 60px;">
@@ -344,7 +344,6 @@
             this.symb = symb;
         }
     }
-
     let i=0;
     let j;
     //let htmlTab="";
@@ -355,6 +354,7 @@
     let previous;
     let play = 0;
     let currentCouleur = "blanc";
+    let end=false;
 
     function doSelection(identif,first){
         previous = identif;
@@ -548,6 +548,9 @@
             previous = null;
             replaceDame(identif);
             doAllSideSelection(identif);
+            if(hasWon(plateau[x][y].symb)){
+                end=true;
+            }
         }else if(plateau[oldX][oldY].symb.substring(0,4)=='dame' && plateau[x][y].symb=="rouge"){
             let found = false;
             document.getElementById(`l${x}c${y}`).childNodes[0].src = require("../assets/dame/"+plateau[oldX][oldY].symb+".png");
@@ -579,6 +582,9 @@
                     plateau[newX][newY].symb = "";
                     document.getElementById(`l${newX}c${newY}`).childNodes[0].src = "";
                     increaseCpt(color);
+                    if(hasWon(color)){
+                        end=true;
+                    }
                 }
             }
             previous = null;
@@ -594,8 +600,8 @@
 
     function increaseCpt(colorPiece){
         let line = document.getElementById(`score_${colorPiece}`).textContent;
-        let score = parseInt(line.charAt(line.length-1))+1;
-        document.getElementById(`score_${colorPiece}`).innerHTML = line.substring(0,line.length-1)+score;
+        let score = parseInt(line.substring(2,line.length))+1;
+        document.getElementById(`score_${colorPiece}`).innerHTML = ": "+score;
     }
 
     function removeRed(){
@@ -661,17 +667,25 @@
         document.getElementById(`img_${currentCouleur}`).style = 'border: 5px solid #ff0000';
         document.getElementById(`img_${opposite(currentCouleur)}`).style = "";
     }
+    function hasWon(coul){
+        if(document.getElementById(`score_${coul}`).textContent == ": 20"){
+            alert("Les "+coul+"s ont gagné!");
+            return true;
+        }
+        return false;
+    }
     export default {
         name: "Dame",
         methods:{
             doAction(identif){
-                console.log("coucou");
-                let x = parseInt(identif.charAt(1));
-                let y = parseInt(identif.charAt(3));
-                if(plateau[x][y].symb == 'noir' || plateau[x][y].symb == 'blanc' || plateau[x][y].symb.substring(0,4) == 'dame'){
-                    doSelection(identif,true);
-                }else{
-                    doMovement(identif);
+                if(!end) {
+                    let x = parseInt(identif.charAt(1));
+                    let y = parseInt(identif.charAt(3));
+                    if (plateau[x][y].symb == 'noir' || plateau[x][y].symb == 'blanc' || plateau[x][y].symb.substring(0, 4) == 'dame') {
+                        doSelection(identif, true);
+                    } else {
+                        doMovement(identif);
+                    }
                 }
             }
         },
