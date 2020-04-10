@@ -32,7 +32,7 @@
             },
             getWidth(){
                 if( screen.width <= 760 ) {
-                    return "250px";
+                    return "280px";
                 }
                 else {
                     return "380px";
@@ -40,7 +40,7 @@
             },
             getHeight(){
                 if( screen.width <= 760 ) {
-                    return "380px";
+                    return "360px";
                 }
                 else {
                     return "300px";

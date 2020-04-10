@@ -4,8 +4,8 @@
             <v-card
                     id="card"
                     class="mx-auto"
-                    max-width="374"
-                    height="450"
+                    :width="getWidth()"
+                    :height="getHeight()"
                     :elevation="hover ? 12 : 2"
             >
                 <v-img
@@ -37,6 +37,22 @@
             resolve_img_url: function (path) {
                 let images = require.context('../assets/', false, /\.png$|\.jpg$/)
                 return images("./"+path)
+            },
+            getWidth(){
+                if( screen.width <= 760 ) {
+                    return "280px";
+                }
+                else {
+                    return "374px";
+                }
+            },
+            getHeight(){
+                if( screen.width <= 760 ) {
+                    return "550px";
+                }
+                else {
+                    return "450px";
+                }
             }
         }
     }
