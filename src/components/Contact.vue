@@ -59,7 +59,7 @@
             },
             getClass(){
                 if(screen.width>760){
-                    return "mobile";
+                    return "desktop";
                 }else{
                     return "mobile";
                 }
@@ -97,6 +97,6 @@
         width:450px;
     }
     .mobile{
-        width: 265px;
+        width: 290px;
     }
 </style>
