@@ -59,9 +59,9 @@
             },
             getClass(){
                 if(screen.width>760){
-                    return "champs";
+                    return "mobile";
                 }else{
-                    return "";
+                    return "mobile";
                 }
             }
         },
@@ -93,7 +93,10 @@
         padding-left: 14%;
         float: left;
     }
-    .champs{
+    .desktop{
         width:450px;
+    }
+    .mobile{
+        width: 236px;
     }
 </style>
