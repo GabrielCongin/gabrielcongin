@@ -97,6 +97,6 @@
         width:450px;
     }
     .mobile{
-        width: 236px;
+        width: 265px;
     }
 </style>
