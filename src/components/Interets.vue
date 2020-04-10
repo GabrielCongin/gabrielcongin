@@ -9,7 +9,7 @@
                      title="Grand amateur de sport" img_interet="running.jpg"></Interet>
         </div>
         <div class="liste_interets">
-            <Interet text="Ayant une famille de musicien, j'ai toujours baigné dans la musique. J'ai pratiqué du cor d'Harmonie
+            <Interet text="Ayant une famille de musiciens, j'ai toujours baigné dans la musique. J'ai pratiqué du cor d'Harmonie
                             pendant quelques années et plus récemment, j'apprends le piano en autodidacte. Quand l'envie me prend,
                             je poste des vidéos sur ma chaîne YouTube."
                      title="Musicien de temps à autre" img_interet="piano.jpg"></Interet>
@@ -23,7 +23,7 @@
             <Interet text="Vous le voyiez venir ? J'ai découvert la programmation assez tard, à la fin du lycée, et je me suis
                            découvert une véritable passion pour celle-ci. Bien que ce concept soit large, pouvoir
                            créer quelque chose à partir de lignes de code est très satisfaisant."
-                     title="Passionnée de programmation" img_interet="computer.jpg"></Interet>
+                     title="Passionné de programmation" img_interet="computer.jpg"></Interet>
         </div>
     </div>
 </template>

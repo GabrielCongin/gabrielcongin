@@ -1,6 +1,6 @@
 <template>
     <div id="jeuCarte" align="center">
-        <h1>Find the different pairs</h1>
+        <h1>Trouvez les différentes paires</h1>
         <table>
             <tr>
                 <td> <img src="../assets/cartespng/backside.png" id="1" @click="displayName('1')"> </td>

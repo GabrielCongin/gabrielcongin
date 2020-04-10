@@ -1,7 +1,7 @@
 <template>
     <div id="contact">
         <div id="formulaire_contact">
-           <v-form @submit.prevent="sendEmail">
+           <v-form @submit.prevent="sendEmail" ref="form">
                 <v-text-field
                         :class="getClass()"
                     name="user_name"
@@ -51,7 +51,8 @@
                 emailjs.sendForm('gmail', 'template_WrolnKjg', e.target, 'user_kPj7i6q51Puft0vl0oma2')
                     .then((result) => {
                         console.log('SUCCESS!', result.status, result.text);
-                        alert("Merci pour votre message!")
+                        alert("Merci pour votre message!");
+                        location.reload();
                     }, (error) => {
                         console.log('FAILED...', error);
                         alert("Une erreur est survenue! N'hésitez pas à me joindre directement par mail : gabriel.congin@gmail.com ou en cliquant sur l'icône dans le footer")
