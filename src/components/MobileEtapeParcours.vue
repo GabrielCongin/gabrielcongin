@@ -1,13 +1,8 @@
 <template>
     <div id="etapeParcours">
-        <div id="date">
-            <p>{{date}}</p>
-            <p>{{duree}}</p>
-        </div>
-        <div id="content">
-            <h4 style="color:#212121;padding-bottom: 5px;">{{title}}</h4>
-            <p>{{description}}</p>
-        </div>
+        <p style="color:gray;"> <span style="color:#212121;padding-bottom:5px;font-size: medium;font-weight: bold">{{title}}</span> / {{date}}</p>
+        <p>{{description}}</p>
+        <v-divider></v-divider>
     </div>
 </template>
 
@@ -27,14 +22,4 @@
         padding-top: 10px;
         padding-left: 10px;
     }
-    #date{
-        display: inline;
-        float: left;
-        width: 100px;
-    }
-    #content{
-        display: inline;
-        float: left;
-    }
-
 </style>
