@@ -3,7 +3,7 @@
         <div id="formulaire_contact">
            <v-form @submit.prevent="sendEmail">
                 <v-text-field
-                        class="test"
+                        :class="getClass()"
                     name="user_name"
                     v-model="name"
                     :rules="nameRules"
@@ -56,6 +56,13 @@
                         console.log('FAILED...', error);
                         alert("Une erreur est survenue! N'hésitez pas à me joindre directement par mail : gabriel.congin@gmail.com ou en cliquant sur l'icône dans le footer")
                     });
+            },
+            getClass(){
+                if(screen.width>760){
+                    return "champs";
+                }else{
+                    return "";
+                }
             }
         },
         data: () => ({
@@ -86,7 +93,7 @@
         padding-left: 14%;
         float: left;
     }
-    .test{
+    .champs{
         width:450px;
     }
 </style>

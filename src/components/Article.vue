@@ -32,7 +32,7 @@
             },
             getWidth(){
                 if( screen.width <= 760 ) {
-                    return "330px";
+                    return "320px";
                 }
                 else {
                     return "380px";
