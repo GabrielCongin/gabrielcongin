@@ -69,7 +69,7 @@
 
 <style scoped>
     #parcours{
-        padding-top: 7px;
+        padding-top: 2px;
     }
     @media all and (min-width: 1024px) {
         #parcours{
@@ -78,7 +78,7 @@
         }
         #footer{
             text-align: center;
-            padding-top: 2.55%;
+            padding-top: 1.8%;
         }
     }
     #timeline{

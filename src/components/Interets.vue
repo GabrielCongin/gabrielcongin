@@ -49,7 +49,7 @@
     }
     @media all and (min-width: 1024px){
         #interets{
-            height: 1025px;
+            height: 1038px;
             background-image: url("../assets/background/design.png");
         }
         #footer{

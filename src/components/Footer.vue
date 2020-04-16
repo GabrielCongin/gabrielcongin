@@ -7,6 +7,8 @@
             <v-icon @click="facebook">mdi-facebook</v-icon>
             <v-icon @click="linkedin">mdi-linkedin</v-icon>
             <v-icon @click="gmail">mdi-gmail</v-icon>
+            <br/>
+            Graphismes par Manon Congin et Antoine Neveux
         </p>
     </footer>
 </template>

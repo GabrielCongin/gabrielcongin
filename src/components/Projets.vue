@@ -59,7 +59,7 @@
     }
     @media all and (min-width: 1024px){
         #projets{
-            height: 1050px;
+            height: 1062px;
             background-image: url("../assets/background/design.png");
         }
         #footer{

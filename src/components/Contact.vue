@@ -102,7 +102,7 @@
             width:300px;
         }
         #background{
-            height: 585px;
+            height: 598px;
             background-image: url("../assets/background/design.png");
         }
         #footer{

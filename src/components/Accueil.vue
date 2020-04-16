@@ -54,13 +54,13 @@
             width:300px;
         }
         #accueil{
-            height: 607px;
+            height: 623px;
             background-image: url("../assets/background/design.png");
         }
         #footer{
             position: absolute;
             padding-top: 41%;
-            padding-left: 39%;
+            padding-left: 36%;
         }
     }
     @media all and (max-width: 760px){
