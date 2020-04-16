@@ -1,5 +1,5 @@
 <template>
-    <div id="contact">
+    <div id="background">
         <div id="formulaire_contact">
            <v-form @submit.prevent="sendEmail" ref="form">
                 <v-text-field
@@ -37,15 +37,18 @@
             </v-form>
         </div>
         <div id="illustration" v-responsive.lg.xl>
-            <v-img width="350px" src="../assets/avatar_croquis.jpg"></v-img>
+            <v-img id="perso" src="../assets/background/perso.png"></v-img>
         </div>
+        <Footer id="footer"/>
     </div>
 </template>
 
 <script>
     import emailjs from 'emailjs-com';
+    import Footer from "./Footer";
     export default {
         name: "Contact",
+        components: {Footer},
         methods: {
             sendEmail: (e) => {
                 emailjs.sendForm('gmail', 'template_WrolnKjg', e.target, 'user_kPj7i6q51Puft0vl0oma2')
@@ -84,15 +87,34 @@
 <style scoped>
     #formulaire_contact{
         padding-left: 5%;
-        padding-top: 5%;
+        padding-top: 7%;
         display: inline;
         float: left;
     }
     #illustration{
-        padding-top: 7%;
+        padding-top: 4%;
         display: inline;
         padding-left: 14%;
         float: left;
+    }
+    @media all and (min-width: 1024px){
+        #perso{
+            width:300px;
+        }
+        #background{
+            height: 585px;
+            background-image: url("../assets/background/design.png");
+        }
+        #footer{
+            position: absolute;
+            padding-top: 43%;
+            padding-left: 39%;
+        }
+    }
+    @media all and (max-width: 760px){
+        #footer{
+            display: none;
+        }
     }
     .desktop{
         width:450px;

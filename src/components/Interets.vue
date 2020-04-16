@@ -25,14 +25,16 @@
                            créer quelque chose à partir de lignes de code est très satisfaisant."
                      title="Passionné de programmation" img_interet="computer.jpg"></Interet>
         </div>
+        <Footer id="footer"/>
     </div>
 </template>
 
 <script>
     import Interet from "./Interet";
+    import Footer from "./Footer";
     export default {
         name: "Interets",
-        components: {Interet}
+        components: {Footer, Interet}
     }
 </script>
 
@@ -44,6 +46,22 @@
     #interets{
         padding-top: 10px;
         padding-left: 2.9%;
+    }
+    @media all and (min-width: 1024px){
+        #interets{
+            height: 1025px;
+            background-image: url("../assets/background/design.png");
+        }
+        #footer{
+            position: absolute;
+            padding-top: 77%;
+            padding-left: 36.5%;
+        }
+    }
+    @media all and (max-width: 760px){
+        #footer{
+            display: none;
+        }
     }
 
 </style>

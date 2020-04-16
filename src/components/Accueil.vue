@@ -6,14 +6,17 @@
             <p id="present"> Je suis Gabriel,<br/> Étudiant en <span class="keyword">Informatique </span><v-icon>mdi-laptop</v-icon><br/>& Passionné de <span class="keyword">Sport </span><v-icon>mdi-dumbbell</v-icon></p>
         </div>
         <div id="illustration" v-responsive.lg.xl>
-            <v-img width="350px" src="../assets/avatar_croquis.jpg"></v-img>
+            <v-img id="perso" src="../assets/background/perso.png"></v-img>
         </div>
+        <Footer id="footer"/>
     </div>
 </template>
 
 <script>
+    import Footer from "./Footer";
     export default {
-        name: "Accueil"
+        name: "Accueil",
+        components: {Footer}
     }
 </script>
 
@@ -34,7 +37,10 @@
     }
     #accueil {
         padding-left: 5%;
-        padding-top: 7%;
+        padding-top: 4%;
+    }
+    #message{
+        padding-top: 3%;
     }
     #message,#illustration{
         float:left;
@@ -42,5 +48,24 @@
     }
     #illustration{
         padding-left: 25%;
+    }
+    @media all and (min-width: 1024px) {
+        #perso{
+            width:300px;
+        }
+        #accueil{
+            height: 607px;
+            background-image: url("../assets/background/design.png");
+        }
+        #footer{
+            position: absolute;
+            padding-top: 41%;
+            padding-left: 39%;
+        }
+    }
+    @media all and (max-width: 760px){
+        #footer{
+            display: none;
+        }
     }
 </style>

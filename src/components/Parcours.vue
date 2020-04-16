@@ -1,7 +1,7 @@
 <template>
     <div id="parcours">
         <div v-responsive.lg.xl>
-            <v-timeline align-top>
+            <v-timeline align-top id="timeline">
                 <EtapeParcours :description="items[0].description" :title="items[0].title" :icone="items[0].icon" date="Depuis le 09-2019"></EtapeParcours>
                 <EtapeParcours :description="items[1].description" :title="items[1].title" :icone="items[1].icon" :date="items[1].date"></EtapeParcours>
                 <EtapeParcours :description="items[2].description" :title="items[2].title" :icone="items[2].icon" :date="items[2].date"></EtapeParcours>
@@ -13,15 +13,17 @@
         <div v-responsive.sm.xs v-for="(item, i) in items" :key="i">
             <MobileEtapeParcours :description="item.description" :title="item.title" :date="item.date"></MobileEtapeParcours>
         </div>
+        <Footer id="footer"/>
     </div>
 </template>
 
 <script>
     import EtapeParcours from "./EtapeParcours";
     import MobileEtapeParcours from "./MobileEtapeParcours";
+    import Footer from "./Footer";
     export default {
         name: "Parcours",
-        components: {MobileEtapeParcours, EtapeParcours},
+        components: {Footer, MobileEtapeParcours, EtapeParcours},
         data:() => ({
             items:[
                 {
@@ -68,5 +70,23 @@
 <style scoped>
     #parcours{
         padding-top: 7px;
+    }
+    @media all and (min-width: 1024px) {
+        #parcours{
+            height: 1080px;
+            background-image: url("../assets/background/design.png");
+        }
+        #footer{
+            text-align: center;
+            padding-top: 2.55%;
+        }
+    }
+    #timeline{
+        margin-bottom: 0px;
+    }
+    @media all and (max-width: 760px){
+        #footer{
+            display: none;
+        }
     }
 </style>

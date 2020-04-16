@@ -35,14 +35,16 @@
             <Article description="Tous les TPs de Haskell" title="Programmation fonctionnelle" subtitle="Projet universitaire 01-2020 / 03-2020" img_article="miage_logo.jpg" lien_internet="https://github.com/GabrielCongin/Haskell_TPs"
                      newPage="_blank"></Article>
         </div>
+        <Footer id="footer"/>
     </div>
 </template>
 
 <script>
     import Article from "./Article";
+    import Footer from "./Footer";
     export default {
         name: "Projets",
-        components: {Article}
+        components: {Footer, Article}
     }
 </script>
 
@@ -54,6 +56,22 @@
     #projets{
         padding-top: 10px;
         padding-left: 2%;
+    }
+    @media all and (min-width: 1024px){
+        #projets{
+            height: 1050px;
+            background-image: url("../assets/background/design.png");
+        }
+        #footer{
+            position: absolute;
+            padding-top: 79%;
+            padding-left: 36.5%;
+        }
+    }
+    @media all and (max-width: 760px){
+        #footer{
+            display: none;
+        }
     }
 
 </style>

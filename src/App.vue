@@ -5,7 +5,7 @@
       <router-view>
       </router-view>
     </v-content>
-        <Footer/>
+        <Footer id="footerMobile"/>
     </v-app>
 </template>
 
@@ -20,3 +20,11 @@ export default {
   }
 };
 </script>
+
+<style>
+    @media all and (min-width: 761px){
+        #footerMobile{
+            display: none;
+        }
+    }
+</style>
