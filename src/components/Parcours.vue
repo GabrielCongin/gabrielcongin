@@ -82,7 +82,7 @@
             padding-top: 1.8%;
         }
     }
-    @media all and (min-width: 1280px){
+    @media all and (min-width: 1281px){
         #footer{
             padding-top: 3.5%;
         }

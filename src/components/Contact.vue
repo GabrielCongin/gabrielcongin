@@ -120,13 +120,13 @@
             padding-left: 24%;
         }
         #background{
-            height: 700px;
+            height: 705px;
             background-image: url("../assets/background/design.png");
             background-position: right;
         }
         #footer{
             position: marker;
-            padding-top: 635px;
+            padding-top: 640px;
         }
     }
     @media all and (max-width: 760px){
