@@ -1,15 +1,15 @@
 <template>
-    <div id="accueil">
-        <div id="message">
-            <img id="logo" src="../assets/gabriel_pdp_2.png"><img>
-            <h1 id="welcome">Bienvenue !</h1>
-            <p id="present"> Je suis Gabriel,<br/> Étudiant en <span class="keyword">Informatique </span><v-icon>mdi-laptop</v-icon><br/>& Passionné de <span class="keyword">Sport </span><v-icon>mdi-dumbbell</v-icon></p>
+        <div id="accueil">
+            <div id="message">
+                <img id="logo" src="../assets/gabriel_pdp_2.png"><img>
+                <h1 id="welcome">Bienvenue !</h1>
+                <p id="present"> Je suis Gabriel,<br/> Étudiant en <span class="keyword">Informatique </span><v-icon>mdi-laptop</v-icon><br/>& Passionné de <span class="keyword">Sport </span><v-icon>mdi-dumbbell</v-icon></p>
+            </div>
+            <div id="illustration" v-responsive.lg.xl>
+                <v-img id="perso" src="../assets/background/perso.png"></v-img>
+            </div>
+            <Footer id="footer"/>
         </div>
-        <div id="illustration" v-responsive.lg.xl>
-            <v-img id="perso" src="../assets/background/perso.png"></v-img>
-        </div>
-        <Footer id="footer"/>
-    </div>
 </template>
 
 <script>

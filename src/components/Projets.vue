@@ -8,12 +8,12 @@
         </div>
         <div class="liste_projets">
             <Article description="Se joue seul, retrouvez toutes les paires de même valeur et de même couleur
-                                   (les carreaux avec les coeurs, les trèfles avec les piques)" title="Jeu des Paires" subtitle="Projet personnel 02-2020" img_article="jeuCarte.png" lien_article="/projets/jeuPaires"></Article>
+                                       (les carreaux avec les coeurs, les trèfles avec les piques)" title="Jeu des Paires" subtitle="Projet personnel 02-2020" img_article="jeuCarte.png" lien_article="/projets/jeuPaires"></Article>
         </div>
         <div class="liste_projets">
             <Article description="Démo d'un logiciel enregistrant les données brutes du clavier MIDI et des capteurs du gant et produisant avec ces derniers un replay sur partition (entièrement faite manuellement) (Voir description vidéo)"
-                    title="Technologie de détection des doigtés" subtitle="Projet de stage 04-2019 / 07-2019" img_article="pianopiezos.jpg" lien_internet="https://www.youtube.com/watch?v=mSampL4a3IA&feature=youtu.be"
-                    newPage="_blank"></Article>
+                     title="Technologie de détection des doigtés" subtitle="Projet de stage 04-2019 / 07-2019" img_article="pianopiezos.jpg" lien_internet="https://www.youtube.com/watch?v=mSampL4a3IA&feature=youtu.be"
+                     newPage="_blank"></Article>
         </div>
         <div class="liste_projets">
             <Article description="Création d'un programme permettant l'affichage de fichiers ply" title="Modélisation fichiers ply" subtitle="Projet universitaire 10-2018" img_article="modelisation_ply.png" lien_internet="https://www.youtube.com/watch?v=3Qf3Tk4DkuM"
@@ -63,9 +63,8 @@
             background-image: url("../assets/background/design.png");
         }
         #footer{
-            position: absolute;
+            position: marker;
             padding-top: 79%;
-            padding-left: 36.5%;
         }
     }
     @media all and (max-width: 760px){

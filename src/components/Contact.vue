@@ -1,46 +1,47 @@
 <template>
-    <div id="background">
-        <div id="formulaire_contact">
-           <v-form @submit.prevent="sendEmail" ref="form">
-                <v-text-field
-                        :class="getClass()"
-                    name="user_name"
-                    v-model="name"
-                    :rules="nameRules"
-                    :counter="30"
-                    label="Prénom et nom"
-                    required
-                    outlined
-                    color="#212121"
-                    full-width
-                >
-                </v-text-field>
-                <v-text-field
-                        name="user_email"
-                        v-model="email"
-                        :rules="emailRules"
-                        :counter="70"
-                        label="Email"
+        <div id="background">
+            <div id="formulaire_contact">
+               <v-form @submit.prevent="sendEmail" ref="form">
+                    <v-text-field
+                            :class="getClass()"
+                        name="user_name"
+                        v-model="name"
+                        :rules="nameRules"
+                        :counter="30"
+                        label="Prénom et nom"
                         required
                         outlined
                         color="#212121"
-                >
-                </v-text-field>
-                <v-textarea
-                        name="message"
-                        label="Message"
-                        required
-                        outlined
-                        color="#212121"
-                ></v-textarea>
-                <v-btn class="mr-4" type="submit" value="Send">Envoyer</v-btn>
-            </v-form>
+                        full-width
+                    >
+                    </v-text-field>
+                    <v-text-field
+                            name="user_email"
+                            v-model="email"
+                            :rules="emailRules"
+                            :counter="70"
+                            label="Email"
+                            required
+                            outlined
+                            color="#212121"
+                    >
+                    </v-text-field>
+                    <v-textarea
+                            name="message"
+                            label="Message"
+                            required
+                            outlined
+                            color="#212121"
+                    ></v-textarea>
+                    <v-btn class="mr-4" type="submit" value="Send">Envoyer</v-btn>
+                </v-form>
+            </div>
+            <div id="illustration" v-responsive.lg.xl>
+                <v-img id="perso" src="../assets/background/perso.png"></v-img>
+            </div>
+            <Footer id="footer"/>
         </div>
-        <div id="illustration" v-responsive.lg.xl>
-            <v-img id="perso" src="../assets/background/perso.png"></v-img>
-        </div>
-        <Footer id="footer"/>
-    </div>
+
 </template>
 
 <script>
@@ -106,9 +107,8 @@
             background-image: url("../assets/background/design.png");
         }
         #footer{
-            position: absolute;
+            position: marker;
             padding-top: 43%;
-            padding-left: 39%;
         }
     }
     @media all and (max-width: 760px){
