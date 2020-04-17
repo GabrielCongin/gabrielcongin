@@ -50,12 +50,12 @@
 
 <style scoped>
     .liste_projets{
-        display: inline;
+        display: table;
         float: left;
     }
     #projets{
         padding-top: 10px;
-        padding-left: 2%;
+        /*padding-left: 2%;*/
     }
     @media all and (min-width: 761px){
         #projets{

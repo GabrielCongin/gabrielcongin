@@ -70,7 +70,7 @@
             width:300px;
         }
         #illustration{
-            padding-left: 34%;
+            padding-left: 35%;
         }
         #accueil{
             height: 720px;

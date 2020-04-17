@@ -93,7 +93,7 @@
         float: left;
     }
     #illustration{
-        padding-top: 3%;
+        padding-top: 5%;
         display: inline;
         padding-left: 14%;
         float: left;
@@ -117,16 +117,16 @@
             width:300px;
         }
         #illustration{
-            padding-left: 23%;
+            padding-left: 24%;
         }
         #background{
-            height: 680px;
+            height: 700px;
             background-image: url("../assets/background/design.png");
             background-position: right;
         }
         #footer{
             position: marker;
-            padding-top: 600px;
+            padding-top: 635px;
         }
     }
     @media all and (max-width: 760px){
