@@ -65,6 +65,9 @@
         }
     }
     @media all and (min-width: 1281px){
+        #perso{
+            width:300px;
+        }
         #illustration{
             padding-left: 31%;
         }

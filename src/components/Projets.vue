@@ -76,6 +76,9 @@
         #footer{
             padding-top: 975px;
         }
+        #projets{
+            padding-left: 9%;
+        }
     }
     @media all and (max-width: 760px){
         #footer{
