@@ -98,7 +98,7 @@
         padding-left: 14%;
         float: left;
     }
-    @media all and (min-width: 1024px){
+    @media all and (min-width: 761px) and (max-width: 1280px) {
         #perso{
             width:300px;
         }
@@ -110,6 +110,11 @@
         #footer{
             position: marker;
             padding-top: 542px;
+        }
+    }
+    @media all and (min-width: 1281px){
+        #illustration{
+            padding-left: 20%;
         }
     }
     @media all and (max-width: 760px){

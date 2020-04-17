@@ -47,7 +47,7 @@
         padding-top: 10px;
         padding-left: 2.9%;
     }
-    @media all and (min-width: 1024px){
+    @media all and (min-width: 761px) and (max-width: 1280px) {
         #interets{
             height: 1038px;
             background-image: url("../assets/background/design.png");

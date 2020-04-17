@@ -49,7 +49,7 @@
     #illustration{
         padding-left: 25%;
     }
-    @media all and (min-width: 1024px) {
+    @media all and (min-width: 761px) and (max-width: 1280px) {
         #perso{
             width:300px;
         }
@@ -61,6 +61,21 @@
         #footer{
             position: absolute;
             padding-top: 518px;
+            padding-left: 36%;
+        }
+    }
+    @media all and (min-width: 1281px){
+        #illustration{
+            padding-left: 31%;
+        }
+        #accueil{
+            height: 720px;
+            background-image: url("../assets/background/design.png");
+            background-position: right;
+        }
+        #footer{
+            position: absolute;
+            padding-top: 600px;
             padding-left: 36%;
         }
     }

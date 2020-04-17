@@ -57,7 +57,7 @@
         padding-top: 10px;
         padding-left: 2%;
     }
-    @media all and (min-width: 1024px){
+    @media all and (min-width: 761px){
         #projets{
             height: 1062px;
             background-image: url("../assets/background/design.png");
@@ -65,7 +65,16 @@
         }
         #footer{
             position: marker;
+        }
+    }
+    @media all and (max-width: 1280px){
+        #footer{
             padding-top: 990px;
+        }
+    }
+    @media all and (min-width: 1281px){
+        #footer{
+            padding-top: 975px;
         }
     }
     @media all and (max-width: 760px){
