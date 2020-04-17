@@ -60,7 +60,7 @@
     }
     @media all and (min-width: 1281px){
         #interets{
-            padding-left: 12%;
+            padding-left: 13.5%;
         }
     }
     @media all and (max-width: 760px){

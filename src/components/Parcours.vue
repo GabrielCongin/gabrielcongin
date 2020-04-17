@@ -82,6 +82,11 @@
             padding-top: 1.8%;
         }
     }
+    @media all and (min-width: 1280px){
+        #footer{
+            padding-top: 3.5%;
+        }
+    }
     #timeline{
         margin-bottom: 0px;
     }

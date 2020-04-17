@@ -70,7 +70,7 @@
     }
     @media all and (min-width: 1281px){
         #projets{
-            padding-left: 12%;
+            padding-left: 12.5%;
         }
     }
     @media all and (max-width: 760px){
