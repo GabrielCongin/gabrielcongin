@@ -93,7 +93,7 @@
         float: left;
     }
     #illustration{
-        padding-top: 4%;
+        padding-top: 3%;
         display: inline;
         padding-left: 14%;
         float: left;
@@ -117,7 +117,6 @@
             width:300px;
         }
         #illustration{
-            padding-top: 3%;
             padding-left: 23%;
         }
         #background{

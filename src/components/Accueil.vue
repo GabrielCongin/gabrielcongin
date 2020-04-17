@@ -47,6 +47,7 @@
         display: inline;
     }
     #illustration{
+        padding-top: 1%;
         padding-left: 25%;
     }
     @media all and (min-width: 761px) and (max-width: 1280px) {

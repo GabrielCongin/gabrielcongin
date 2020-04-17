@@ -71,7 +71,7 @@
     #parcours{
         padding-top: 2px;
     }
-    @media all and (min-width: 761px) and (max-width: 1280px) {
+    @media all and (min-width: 761px) {
         #parcours{
             height: 1080px;
             background-image: url("../assets/background/design.png");

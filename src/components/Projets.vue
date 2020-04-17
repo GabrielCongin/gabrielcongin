@@ -65,17 +65,10 @@
         }
         #footer{
             position: marker;
-        }
-    }
-    @media all and (max-width: 1280px){
-        #footer{
             padding-top: 990px;
         }
     }
     @media all and (min-width: 1281px){
-        #footer{
-            padding-top: 975px;
-        }
         #projets{
             padding-left: 12%;
         }
