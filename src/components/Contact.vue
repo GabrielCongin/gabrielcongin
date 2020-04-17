@@ -113,8 +113,21 @@
         }
     }
     @media all and (min-width: 1281px){
+        #perso{
+            width:300px;
+        }
         #illustration{
-            padding-left: 20%;
+            padding-top: 3%;
+            padding-left: 23%;
+        }
+        #background{
+            height: 680px;
+            background-image: url("../assets/background/design.png");
+            background-position: right;
+        }
+        #footer{
+            position: marker;
+            padding-top: 600px;
         }
     }
     @media all and (max-width: 760px){

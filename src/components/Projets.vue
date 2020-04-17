@@ -77,7 +77,7 @@
             padding-top: 975px;
         }
         #projets{
-            padding-left: 9%;
+            padding-left: 12%;
         }
     }
     @media all and (max-width: 760px){
