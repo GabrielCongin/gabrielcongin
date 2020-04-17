@@ -73,13 +73,13 @@
             padding-left: 35%;
         }
         #accueil{
-            height: 720px;
+            height: 700px;
             background-image: url("../assets/background/design.png");
             background-position: right;
         }
         #footer{
             position: absolute;
-            padding-top: 600px;
+            padding-top: 580px;
             padding-left: 36%;
         }
     }
