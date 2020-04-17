@@ -75,6 +75,7 @@
         #parcours{
             height: 1080px;
             background-image: url("../assets/background/design.png");
+            background-position: right;
         }
         #footer{
             text-align: center;

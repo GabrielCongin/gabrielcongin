@@ -61,6 +61,7 @@
         #projets{
             height: 1062px;
             background-image: url("../assets/background/design.png");
+            background-position: right;
         }
         #footer{
             position: marker;
