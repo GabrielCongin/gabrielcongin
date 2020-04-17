@@ -64,7 +64,7 @@
         }
         #footer{
             position: marker;
-            padding-top: 79%;
+            padding-top: 990px;
         }
     }
     @media all and (max-width: 760px){

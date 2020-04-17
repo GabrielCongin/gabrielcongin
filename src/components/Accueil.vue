@@ -59,7 +59,7 @@
         }
         #footer{
             position: absolute;
-            padding-top: 41%;
+            padding-top: 518px;
             padding-left: 36%;
         }
     }
