@@ -65,7 +65,7 @@
             padding-left: 36%;
         }
     }
-    @media all and (min-width: 1281px){
+    @media all and (min-width: 1680px){
         #perso{
             width:300px;
         }
