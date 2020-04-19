@@ -730,9 +730,13 @@
 </script>
 
 <style scoped>
+    @media all and (min-width: 761px) {
+        #global #myDiv{
+            padding-left: 25%;
+        }
+    }
     #global #myDiv {
-        float : left;
-        padding-left: 25%;
+        float: left;
     }
 
     #global #scoreImage {
