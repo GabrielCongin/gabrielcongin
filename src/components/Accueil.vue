@@ -65,7 +65,7 @@
             padding-left: 36%;
         }
     }
-    @media all and (min-width: 1601px){
+    @media all and (min-width: 1281px) and (max-width: 1600px){
         #perso{
             width:300px;
         }
@@ -80,6 +80,24 @@
         #footer{
             position: absolute;
             padding-top: 580px;
+            padding-left: 36%;
+        }
+    }
+    @media all and (min-width: 1601px){
+        #perso{
+            width:300px;
+        }
+        #illustration{
+            padding-left: 35%;
+        }
+        #accueil{
+            height: 950px;
+            background-image: url("../assets/background/design.png");
+            background-position: right;
+        }
+        #footer{
+            position: absolute;
+            padding-top: 830px;
             padding-left: 36%;
         }
     }

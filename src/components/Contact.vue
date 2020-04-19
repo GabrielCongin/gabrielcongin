@@ -112,7 +112,7 @@
             padding-top: 542px;
         }
     }
-    @media all and (min-width: 1281px){
+    @media all and (min-width: 1281px) and (max-width: 1600px){
         #perso{
             width:300px;
         }
@@ -127,6 +127,23 @@
         #footer{
             position: marker;
             padding-top: 640px;
+        }
+    }
+    @media all and (min-width: 1601px){
+        #perso{
+            width:300px;
+        }
+        #illustration{
+            padding-left: 24%;
+        }
+        #background{
+            height: 955px;
+            background-image: url("../assets/background/design.png");
+            background-position: right;
+        }
+        #footer{
+            position: marker;
+            padding-top: 890px;
         }
     }
     @media all and (max-width: 760px){

@@ -732,7 +732,7 @@
 <style scoped>
     #global #myDiv {
         float : left;
-        padding-left: 20px;
+        padding-left: 25%;
     }
 
     #global #scoreImage {
