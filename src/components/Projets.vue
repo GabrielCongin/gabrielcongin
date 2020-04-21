@@ -73,6 +73,11 @@
             padding-left: 12.5%;
         }
     }
+    @media all and (min-width: 1601px){
+        #projets{
+            padding-left: 8%;
+        }
+    }
     @media all and (max-width: 760px){
         #footer{
             display: none;

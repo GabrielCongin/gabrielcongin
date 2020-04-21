@@ -134,16 +134,17 @@
             width:300px;
         }
         #illustration{
-            padding-left: 24%;
+            padding-left: 29%;
         }
         #background{
-            height: 955px;
+            height: 995px;
             background-image: url("../assets/background/design.png");
             background-position: right;
+            padding-top: 3%;
         }
         #footer{
             position: marker;
-            padding-top: 890px;
+            padding-top: 940px;
         }
     }
     @media all and (max-width: 760px){

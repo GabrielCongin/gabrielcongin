@@ -88,16 +88,17 @@
             width:300px;
         }
         #illustration{
-            padding-left: 35%;
+            padding-left: 40%;
         }
         #accueil{
-            height: 950px;
+            height: 1000px;
             background-image: url("../assets/background/design.png");
             background-position: right;
+            padding-top: 8%;
         }
         #footer{
             position: absolute;
-            padding-top: 830px;
+            padding-top: 880px;
             padding-left: 36%;
         }
     }
